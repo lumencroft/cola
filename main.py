@@ -1,6 +1,6 @@
 import pandas as pd
 
-def generate_user_matrix(limit=20):
+def generate_user_matrix(limit=40):
     data = []
     
     # 작성자님이 제시한 순서대로 대장(Target)을 찾습니다.
@@ -37,7 +37,7 @@ def generate_user_matrix(limit=20):
             row["부하 1 (원인)"] = "없음"
 
         # 3. 대장의 사슬 (4x+1 확장)
-        current = captain
+        current = parent
         for i in range(1, 4):
             current = current * 4 + 1
             row[f"사슬 {i} (4x+1)"] = current
@@ -53,4 +53,4 @@ def generate_user_matrix(limit=20):
     print("-" * 80)
     print(df.to_string(index=False))
 
-generate_user_matrix(10) # 10줄만 출력
+generate_user_matrix(40) # 10줄만 출력
