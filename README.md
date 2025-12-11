@@ -24,6 +24,9 @@ When we run the Collatz function in reverse (Inverse Map), we generate a tree of
     
 By recursively summing the densities of these branches, the Inverse Tree $T_1$ converges to a total density of **1 (100%)** of all natural numbers.
 
+<img width="1120" height="299" alt="image" src="https://github.com/user-attachments/assets/3ad42fa8-5fb3-4bcf-ba1d-22797287bcd7" />
+
+
 ### 2. The Non-Existence of Counterexample $x$
 Suppose there exists a number $x$ that does not converge to 1 (a loop or a divergent trajectory).
 - Let $x$ be the smallest such counterexample.
