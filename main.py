@@ -8,9 +8,7 @@ def generate_user_matrix(limit=40):
     for captain in captains:
         row = {}
         row["대장 (결과값)"] = captain
-        r = 1 - 2*(captain % 3==2)
-        parent = captain + (captain - r) // 3 * r
-        
+        parent = cap_to_par(captain)
         if parent % 3 == 0:
             row["부하 1 (원인)"] = f"🌿{parent}"
         else:
@@ -19,7 +17,6 @@ def generate_user_matrix(limit=40):
         current = parent
         for i in range(1, 6):
             current = current * 4 + 1
-            row[f"사슬 {i} (4x+1)"] = current
             if current % 3 == 0:
                 row[f"사슬 {i} (4x+1)"] = f"🌿{current}" 
             else:
@@ -30,4 +27,9 @@ def generate_user_matrix(limit=40):
     df = pd.DataFrame(data)
     print(df.to_string(index=False))
 
-generate_user_matrix(40)
+def cap_to_par(captain):
+    r = 1 - 2*(captain % 3==2)
+    parent = captain + (captain - r) // 3 * r
+    return parent
+
+generate_user_matrix(10)

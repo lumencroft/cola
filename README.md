@@ -63,4 +63,4 @@ The Collatz Conjecture is **TRUE**.
 The problem is not about finding a path for every number, but realizing that the path to 1 has already consumed the entire map.
 
 ---
-*© 2025 [Your Name/ID]. All logical rights reserved.*
+*© 2025 [Donghyuk Kim/lumencroft]. All logical rights reserved.*
