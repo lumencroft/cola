@@ -1,55 +1,63 @@
 import pandas as pd
 
-def prove_uniform_distribution(bit_depth=5):
-    # 3x-1 고리 맵핑
-    loop_map = {}
-    # Loop 1
-    for x in [1, 2]: loop_map[x] = "Loop 1"
-    # Loop 5
-    for x in [5, 14, 7, 20, 10]: loop_map[x] = "Loop 5"
-    # Loop 17 (주요 멤버)
-    for x in [17, 50, 25, 74, 37, 110, 55, 164, 82, 41]: loop_map[x] = "Loop 17"
+def collatz_odd_path(n):
+    """Generates the sequence of odd numbers in the Collatz path for n, stopping at 1."""
+    path = []
+    MAX_STEPS = 100000
+    steps = 0
     
-    # 2^bit_depth (예: 32개) 패턴 조사
-    patterns = []
+    while n != 1 and steps < MAX_STEPS:
+        if n % 2 != 0:
+            path.append(n)
+            n = 3 * n + 1
+        else:
+            n //= 2
+        steps += 1
     
-    # k는 홀수만 (잎사귀는 3k)
-    # 비트 패턴을 보기 위해 0 ~ 2^N-1 범위의 모든 홀수 패턴 조사
-    for i in range(1, 2**bit_depth, 2):
-        # 이진수 패턴 (예: 00001)
-        bin_str = format(i, f'0{bit_depth}b')
-        
-        # 해당 패턴을 가진 대표 숫자 k로 테스트
-        # (패턴이 i인 k는 i, i + 2^N, i + 2*2^N... 등 무수히 많음)
-        # 그 중 하나만 테스트해도 경로는 결정됨 (초기 수십 단계)
-        k = i 
-        leaf = 3 * k
-        
-        curr = leaf
-        dest = "Unknown"
-        
-        # 3x-1 경로 추적
-        for _ in range(500):
-            if curr in loop_map:
-                dest = loop_map[curr]
-                break
-            if curr % 2 == 0: curr //= 2
-            else: curr = 3 * curr - 1
-            
-        patterns.append({
-            "Suffix (k)": f"...{bin_str}",
-            "Destination": dest
-        })
-        
-    df = pd.DataFrame(patterns)
-    
-    print("-" * 60)
-    print(f" [증명: 이진수 꼬리({bit_depth}비트)에 따른 목적지 결정론] ")
-    print("-" * 60)
-    print(df.to_string(index=False))
-    
-    # 요약 통계
-    print("\n[패턴별 목적지 분포]")
-    print(df['Destination'].value_counts())
+    if n == 1:
+        # Append the final 1 for consistency if it converged
+        path.append(1)
+        return path
+    else:
+        # Return empty list if it didn't converge to 1 within max steps
+        return []
 
-prove_uniform_distribution(6) # 6비트(64개 패턴) 조사
+# Set the maximum odd number to test
+N_MAX = 1000000
+# Only test odd numbers greater than 1
+odd_numbers = [n for n in range(3, N_MAX + 1) if n % 2 != 0]
+
+total_tested = len(odd_numbers)
+
+# Counters for the paths: keeping 5, 85, and adding 341 (4*85 + 1)
+count_through_5 = 0
+count_through_85 = 0
+count_through_341 = 0
+
+# Test the paths
+for n in odd_numbers:
+    path = collatz_odd_path(n)
+    if not path:
+        continue
+
+    # Check if the number goes through the specified node on its way to 1.
+    if 23 in path:
+        count_through_5 += 1
+    if 11 in path:
+        count_through_85 += 1
+    if 213 in path:
+        count_through_341 += 1
+
+# Calculate ratios relative to the total number of odd numbers tested
+ratio_5 = count_through_5 / total_tested
+ratio_85 = count_through_85 / total_tested
+ratio_341 = count_through_341 / total_tested
+
+# Combine results into a DataFrame
+results = pd.DataFrame({
+    'Path': ['5 (V5 subset)', '85 (V85 subset)', '341 (V341 subset)'],
+    'Count (N <= 10000)': [count_through_5, count_through_85, count_through_341],
+    'Ratio (Approx. Density)': [ratio_5, ratio_85, ratio_341]
+})
+
+print(results.to_markdown(index=False))
