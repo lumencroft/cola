@@ -19,11 +19,11 @@ def generate_user_matrix(limit=40):
         current = parent
         for i in range(1, 6):
             current = current * 4 - 1
-            row[f"사슬 {i} (4x+1)"] = current
+            row[f"사슬 {i} (4x-1)"] = current
             if current % 3 == 0:
-                row[f"사슬 {i} (4x+1)"] = f"🌿{current}" 
+                row[f"사슬 {i} (4x-1)"] = f"🌿{current}" 
             else:
-                row[f"사슬 {i} (4x+1)"] = f"🔗{current}"
+                row[f"사슬 {i} (4x-1)"] = f"🔗{current}"
             
         data.append(row)
 
