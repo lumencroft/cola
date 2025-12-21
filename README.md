@@ -99,3 +99,9 @@ from collatz_matrix import generate_user_matrix
 # Generate the inverse tree structure
 # This will output the Captain-Subordinate matrix
 generate_user_matrix(limit=20)
+
+
+## 7. Contact & Support
+If you have any questions regarding this research, or if you wish to request permission for academic citation or collaborative research, please contact the author at:
+
+📩 **Email: lumencroft@gmail.com**
