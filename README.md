@@ -1,5 +1,5 @@
 # The Collatz Conjecture: A Space-Filling Proof via Inverse Tree Density
-> **Copyright (c) 2025 [Your Name/ID]. All rights reserved.**
+> **Copyright (c) 2025 [Donghyuk/lumencroft]. All rights reserved.**
 > **Strictly Prohibited:** Any unauthorized use, reproduction, or distribution of this logic and the "User Matrix" structure without explicit permission from the author.
 
 [![License: Custom](https://img.shields.io/badge/License-Proprietary-red)]()
