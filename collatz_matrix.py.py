@@ -32,4 +32,4 @@ def cap_to_par(captain):
     parent = captain + (captain - r) // 3 * r
     return parent
 
-generate_user_matrix(10)
+generate_user_matrix(20)
