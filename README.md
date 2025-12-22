@@ -56,15 +56,16 @@ Therefore, for $\mathbb{T}_K$ to physically exist, it requires a non-zero volume
 $$\text{Volume}(\mathbb{T}_K) > 0$$
 
 ### The Contradiction
-
 We have proven that the Main Tree $\mathbb{T}_1$ achieves full saturation:
 
 $$
-\text{Density}(\mathbb{T}_1) = \lim_{n \to \infty} \frac{N_{\text{generated}}(n)}{\text{Space}(n)} = 1 \quad (100 \%)
+\text{Density}(\mathbb{T}_1) = \lim_{n \to \infty} \frac{N_{\text{generated}}(n)}{\text{Space}(n)} = 1 \quad (100\%)
 $$
 
 If $\mathbb{T}_1$ occupies $100\%$ of the space, the existence of $\mathbb{T}_K$ implies:
-$$\text{Total Volume} = \text{Volume}(\mathbb{T}_1) + \text{Volume}(\mathbb{T}_K) > 100 \%$$
+$$
+\text{Total Volume} = \text{Volume}(\mathbb{T}_1) + \text{Volume}(\mathbb{T}_K) > 100\%
+$$
 
 ### Conclusion
 It is topologically impossible for the total volume to exceed $100\%$. Since $\mathbb{T}_1$ is generated from the root $1$ and fills the capacity, $\mathbb{T}_K$ is forced into a **"Measure Zero"** state. A structure with zero volume cannot exist in the integer domain. Thus, all integers must belong to $\mathbb{T}_1$.
