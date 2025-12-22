@@ -108,3 +108,11 @@ from collatz_matrix import generate_botanical_tree_matrix
 # Generate the Fractal Density Matrix
 # Demonstrates the Sovereign Seed and Linear Extension structure
 generate_botanical_tree_matrix(limit=20)
+
+## 6. 📩 Contact & Support
+
+If you have any questions regarding this research, or if you wish to request permission for academic citation or collaborative research, please contact the author.
+
+    Author: Donghyuk (lumencroft)
+
+    Email: lumencroft@gmail.com
