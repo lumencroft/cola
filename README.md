@@ -57,14 +57,13 @@ $$\text{Volume}(\mathbb{T}_K) > 0$$
 
 ### The Contradiction
 We have proven that the Main Tree $\mathbb{T}_1$ achieves full saturation:
+$$
+\text{Density}(\mathbb{T}_1) = \lim_{n \to \infty} \frac{N_{\text{generated}}(n)}{\text{Space}(n)} = 1 \quad (100\\%)
+$$
 
+If $\mathbb{T}_1$ occupies $100\\%$ of the space, the existence of $\mathbb{T}_K$ implies:
 $$
-\text{Density}(\mathbb{T}_1) = \lim_{n \to \infty} \frac{N_{\text{generated}}(n)}{\text{Space}(n)} = 1 \quad (100\%)
-$$
-
-If $\mathbb{T}_1$ occupies $100\%$ of the space, the existence of $\mathbb{T}_K$ implies:
-$$
-\text{Total Volume} = \text{Volume}(\mathbb{T}_1) + \text{Volume}(\mathbb{T}_K) > 100\%
+\text{Total Volume} = \text{Volume}(\mathbb{T}_1) + \text{Volume}(\mathbb{T}_K) > 100\\%
 $$
 
 ### Conclusion
