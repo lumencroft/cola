@@ -56,6 +56,7 @@ Why does this structure fill the space? We treat every generated number not as a
 If such a $K$ exists, it must generate its own independent Inverse Tree, $\mathbb{T}_K$. Due to the isomorphic nature of the Collatz function, $\mathbb{T}_K$ must exhibit the same growth dynamics ($4^n$) as the Main Tree ($\mathbb{T}_1$).
 
 Therefore, for $\mathbb{T}_K$ to physically exist, it requires a non-zero volume within the integer set:
+
 $$\text{Volume}(\mathbb{T}_K) > \frac{1}{4^{K+1}}>0$$
 
 **The Contradiction:**
