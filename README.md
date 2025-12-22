@@ -25,7 +25,8 @@ The Matrix proves that the integer space is not randomly scattered but is **exha
 2.  **Filling Velocity ($(4/3)^n$):** Each chain ($4x+1$) fills the gaps between branches, increasing the density by a factor of $4/3$.
 3.  **Result:** $3^n \times (4/3)^n = 4^n$. The Matrix shows that for every $4^n$ expansion of the number space, the Matrix entries grow by exactly $4^n$. **There are no empty cells in the fabric of integers.**
 
-<img width="1094" height="231" alt="image" src="https://github.com/user-attachments/assets/1c066c7e-a27c-4e1b-9825-76069e9546f7" />
+<img width="592" height="304" alt="image" src="https://github.com/user-attachments/assets/b6c7bb01-8bd6-4729-a659-2e01394c685d" />
+
 
 ---
 
