@@ -27,6 +27,8 @@ The **Fractal Matrix** is the analytical framework that categorizes the infinite
 | **Origin Stem**<br>(Precursor) | The immediate parent node that generated the Seed via the inverse mapping operation. |
 | **Density Chain**<br>(Linear Extension) | The geometric sequence extending from every Seed via the $4x+1$ relation. This chain is responsible for filling the gaps between modular branches. |
 
+![Fractal Matrix Visualization](https://github.com/user-attachments/assets/b6c7bb01-8bd6-4729-a659-2e01394c685d)
+
 ### 2.2. The Physics of Density
 Why does this structure fill the space? We treat every generated number not as a point, but as a **Mass Object** with recursive density.
 
@@ -42,7 +44,7 @@ Why does this structure fill the space? We treat every generated number not as a
    $$3^n \times \left(\frac{4}{3}\right)^n = 4^n$$
    Since the integer search space also expands by $2^2 = 4$ per step ($4^n$), the density ratio remains exactly **1**. **Therefore, there are no voids.**
 
-![Fractal Matrix Visualization](https://github.com/user-attachments/assets/b6c7bb01-8bd6-4729-a659-2e01394c685d)
+
 
 ---
 
