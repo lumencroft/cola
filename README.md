@@ -23,11 +23,12 @@ The **Fractal Matrix** is the analytical framework that categorizes the infinite
 ### 2.1. Structural Definitions (Botanical Topology)
 | Term | Definition |
 | :--- | :--- |
-| **Sovereign Seed**<br>(Target Node) | Any odd integer $i$ where $i \not\equiv 0 \pmod 3$. These are the primary "Growth Points" that spawn new branches in the inverse tree ($3n+1$). |
-| **Origin Stem**<br>(Precursor) | The immediate parent node that generated the Seed via the inverse mapping operation. |
-| **Density Chain**<br>(Linear Extension) | The geometric sequence extending from every Seed via the $4x+1$ relation. This chain is responsible for filling the gaps between modular branches. |
+| **Seed**<br>(Target Node) | Any odd integer $i$ where $i \not\equiv 0 \pmod 3$. These are the primary "Growth Points" that spawn new branches in the inverse tree ($3n+1$). |
+| **Stem**<br>(Precursor) | The immediate parent node that generated the Seed via the inverse mapping operation. |
+| **Chain**<br>(Linear Extension) | The geometric sequence extending from every Seed via the $4x+1$ relation. This chain is responsible for filling the gaps between modular branches. |
 
-![Fractal Matrix Visualization](https://github.com/user-attachments/assets/b6c7bb01-8bd6-4729-a659-2e01394c685d)
+<img width="595" height="287" alt="image" src="https://github.com/user-attachments/assets/a2df86c4-5a6f-40f8-b100-43e5071aca49" />
+
 
 ### 2.2. The Physics of Density
 Why does this structure fill the space? We treat every generated number not as a point, but as a **Mass Object** with recursive density.
