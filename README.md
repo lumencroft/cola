@@ -56,6 +56,7 @@ Therefore, for $\mathbb{T}_K$ to physically exist, it requires a non-zero volume
 $$\text{Volume}(\mathbb{T}_K) > 0$$
 
 ### The Contradiction
+
 We have proven that the Main Tree $\mathbb{T}_1$ achieves full saturation:
 $$\text{Density}(\mathbb{T}_1) = \lim_{n \to \infty} \frac{N_{generated}(n)}{\text{Space}(n)} = 1 \quad (100\%)$$
 
