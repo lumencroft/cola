@@ -1,4 +1,4 @@
-###Asymptotic Density Modeling and Proof by Contradiction of the Collatz Reverse Tree
+###Asymptotic Density Modeling and Proof by Contradiction of the Collatz Reverse Tree###
 
 Abstract
 
